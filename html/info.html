@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Đăng Nhập</title>
+</head>
+<body>
+    <h1>Thông Tin Đăng Nhập</h1>
+    <table border="1" cellpadding="8" cellspacing="0" width="50%">
+        <tr>
+            <th colspan="2">THÔNG TIN ĐĂNG NHẬP</th>
+        </tr>
+        <tr>
+            <td>User Name</td>
+            <td id="us"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td id="pw"></td>
+        </tr>
+        <tr>
+            <td>Giới Tính</td>
+            <td id="gen"></td>
+        </tr>
+        <tr>
+            <td>Cafe bạn chọn</td>
+            <td id="cf"></td>
+        </tr>
+    </table>
+
+    <script>
+        document.getElementById("us").textContent = localStorage.getItem("us") || "Không có dữ liệu";
+        document.getElementById("pw").textContent = localStorage.getItem("pd") ? "******" : "Không có dữ liệu"; 
+        document.getElementById("cf").textContent = localStorage.getItem("cf") || "Không có dữ liệu";
+        document.getElementById("gen").textContent = localStorage.getItem("gt") || "Không có dữ liệu";
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registration</title>
+    <link rel="stylesheet" href="../styles/styles.css"> 
+</head>
+<body>
+    <div class="wrapper">
+        <form>
+            <input type="text" id="txtus" placeholder="User name" required>
+            <input type="password" id="txtmk" placeholder="Password" required>
+            
+            <label>
+                <input type="radio" name="gt" value="Nam">Nam
+            </label>
+            <label>
+                <input type="radio" name="gt" value="Nữ">Nữ
+            </label>
+            
+            <div>
+                <label><input type="checkbox" value="Trung Nguyen"> Trung Nguyen</label>
+                <label><input type="checkbox" value="MeKong"> MeKong</label>
+                <label><input type="checkbox" value="New Blue"> New Blue</label>
+                <label><input type="checkbox" value="Trà sữa"> Trà sữa</label>
+            </div>
+
+            <input type="button" value="Nhập" onclick="Nhap()">
+        </form>
+    </div>
+
+    <script src="../JS/script.js"></script> 
+</body>
+</html>
